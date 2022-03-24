@@ -1,12 +1,11 @@
 # qrcode-generator
-
-Terraform to create a QR Code generator using Cloud Functions
+This repo provides Terraform code which will provision a QR Code generator using Google Cloud Functions. The accepts text via querstring, generates a QR Code as a PNG, stores it in Google CLoud Storage, and returns a JSON object containing the public URL of the QR Code.
 
 ## Requirements
 Terraform 1.0 or higher
+A GCP project
 
 ## How to use
-1. Create a GCP project (or select an existing one)
 1. Edit `terraform.tfvars`: replace the values with appropriate values for your project
 1. run `terraform init`
 1. run `terraform apply`
