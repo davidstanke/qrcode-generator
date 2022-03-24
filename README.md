@@ -13,6 +13,6 @@ This repo provides Terraform code which will provision a QR Code generator using
 
 ...when the `apply` command completes, you'll see an output named `qrcode_generator_endpoint`. This is the URL to your QR Code generator service.
 
-To use it, make a GET request to that URL, with a query parameter named `qrtext` to specify the desired text/URL for the QR code.
+To use it, make a GET request to that URL, replacing the value of the `qrtext` parameter with your desired text/URL for the QR code.
 
 > Example: `https://<qrcode_generator_endpoint>?qrtext=hello+world`
