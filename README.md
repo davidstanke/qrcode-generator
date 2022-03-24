@@ -1,5 +1,5 @@
 # qrcode-generator
-This repo provides Terraform code which will provision a QR Code generator using Google Cloud Functions. The function is exposed via an HTTPS endpoint which accepts text via querstring. It generates a QR Code as a PNG, stores it in Google CLoud Storage, and returns a JSON object containing the public URL of the QR Code.
+This repo provides Terraform code which will provision a QR Code generator using Google Cloud Functions. The function is exposed via an HTTPS endpoint which accepts text via querystring. It generates a QR Code as a PNG, stores it in Google Cloud Storage, and returns a JSON object containing the public URL of the QR Code.
 
 ## Requirements
 Terraform 1.0 or higher
