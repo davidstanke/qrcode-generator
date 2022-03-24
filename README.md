@@ -3,7 +3,7 @@
 Terraform to create a QR Code generator using Cloud Functions
 
 ## Requirements
-Terraform 1.1 or higher
+Terraform 1.0 or higher
 
 ## How to use
 1. Create a GCP project (or select an existing one)
