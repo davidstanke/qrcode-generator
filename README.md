@@ -6,8 +6,10 @@ This repo provides Terraform code which will provision a QR Code generator using
 * A GCP project
 
 ## How to use
-1. Edit `terraform.tfvars`: replace the values with appropriate values for your project
-1. run `terraform init`
+1. Create a storage bucket for terraform state. Name it `<your_project_id>-tfstate`
+1. Edit `terraform.tfvars`: replace the values with appropriate values for your project.
+1. Edit `backend.conf`: replace the project id with your terraform state storage bucket.
+1. run `terraform init -backend-config=backend.conf`
 1. run `terraform apply`
   * enter `yes` when prompted
 
